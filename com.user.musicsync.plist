@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.user.musicsync</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/dave/projects/music-sync/launch.sh</string>
+    </array>
+    <key>KeepAlive</key>
+    <true/>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>LSUIElement</key>
+    <true/>
+    <key>StandardErrorPath</key>
+    <string>/Users/dave/.music-sync/stderr.log</string>
+    <key>StandardOutPath</key>
+    <string>/Users/dave/.music-sync/stdout.log</string>
+</dict>
+</plist>

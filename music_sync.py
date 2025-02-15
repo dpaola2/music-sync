@@ -17,7 +17,13 @@ logging.basicConfig(
 
 class MusicSyncApp(rumps.App):
     def __init__(self):
-        super(MusicSyncApp, self).__init__("🎵", title="🎵")
+        super(MusicSyncApp, self).__init__(
+            "🎵",
+            title="🎵",
+            quit_button=None,  # Hide the quit button since we'll add our own
+            icon=None  # Don't use an icon to prevent dock icon
+        )
+        rumps.debug_mode(False) 
         logging.debug("App initialized")
         
         # Load config
